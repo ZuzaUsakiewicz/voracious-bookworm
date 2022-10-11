@@ -2,7 +2,7 @@
 
 ###### Personal Library App
 
-### Live: [Voracious Bookworm]()
+### ~~Live:~~ [Voracious Bookworm]()
 
 ## Table of contents
 
@@ -17,21 +17,22 @@ CRUD React App to make your own virtual library, where you can add, edit, delete
 
 ## Technologies
 
-Project created with:
-
 - Vite
 - React
 - TypeScript
 - Tailwind
 - Supabase
 - Redux Toolkit
+- React Hook Form
+- React Query
+- React Router Dom
 - Framer Motion
 
 ## Future Addons:
 
 - Add, Edit, Delete Books
 - User authentication
-- Badges
+- Badges and notifications
 - Custom themes
 - Personal lists
 - etc...
