@@ -12,7 +12,9 @@ import DashboardLayout from "./pages/DashboardLayout";
 import AddBookForm from "./components/AddBookForm";
 import Library from "./components/Library";
 import Dashboard from "./components/Dashboard";
+import { QueryClient, QueryClientProvider } from "react-query";
 
+const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,6 +47,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
 );
