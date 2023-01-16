@@ -35,11 +35,11 @@ const router = createBrowserRouter([
       },
       { path: "library", element: <Library /> },
       { path: "main", element: <Dashboard /> },
+      {
+        path: "add",
+        element: <AddBookForm />,
+      },
     ],
-  },
-  {
-    path: "add",
-    element: <AddBookForm />,
   },
 ]);
 
