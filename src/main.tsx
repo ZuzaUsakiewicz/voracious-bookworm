@@ -7,11 +7,11 @@ import {
   RouterProvider,
   redirect,
 } from "react-router-dom";
-import Auth from "./pages/Auth";
 import DashboardLayout from "./pages/DashboardLayout";
 import AddBookForm from "./components/AddBookForm";
 import Library from "./components/Library";
 import Dashboard from "./components/Dashboard";
+import Signup from "./pages/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "auth",
-    element: <Auth />,
+    path: "signup",
+    element: <Signup />,
   },
   // protected routes:
   {
